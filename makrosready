@@ -1,0 +1,36 @@
+//v dannom textovom doke sobrani shpargalki gotovih shablonov raznih funkciy
+
+//============vivod na ekran=====================
+//Serial.begin() - inicializaciya COM porta
+if (Serial.available() > 0) {
+    int datain = Serial.parseInt();//======vivod simvolami
+    Serial.print(datain);
+  }//============vivod na ekran=====================
+if (Serial.available() > 0) {
+    char datain = Serial.read();//======vivod simvola
+    Serial.print(datain);
+}//============vivod na ekran=====================
+
+
+
+//============millis=====================
+//millis() - vozvrashaet kolichestvo millisekund s momenta zapuska programmi
+unsigned long previousMillis = 0;
+unsigned long currentMillis = millis();
+if (currentMillis - previousMillis >= interval) {
+    previousMillis = currentMillis;
+}//============millis=====================
+
+//============analogRead=====================
+//analogRead() - vozvrashaet znachenie ot 0 do 1023
+int sensorValue = analogRead(A0);
+int sensorValue = map(sensorValue, 0, 1023, 0, 255);
+//============analogRead=====================
+
+//============digitalRead=====================
+//digitalRead() - vozvrashaet znachenie 0 ili 1
+int buttonState = digitalRead(2);
+//============digitalRead=====================
+
+
+//===========if else=====================

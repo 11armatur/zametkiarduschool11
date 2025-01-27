@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"name": "zaserialport",
+			"path": "../../zaserialport"
+		},
+		{
+			"name": "ifelsereadiLoop",
+			"path": "../../skillready/ifelsereadiLoop"
+		}
+	],
+	"settings": {}
+}
