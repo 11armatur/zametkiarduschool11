@@ -15,8 +15,8 @@ if (Serial.available() > 0) {
 
 //============millis=====================
 //millis() - vozvrashaet kolichestvo millisekund s momenta zapuska programmi
-unsigned long previousMillis = 0;
-unsigned long currentMillis = millis();
+unsigned long previousMillis = 0; //before setup
+unsigned long currentMillis = millis();//in loop
 if (currentMillis - previousMillis >= interval) {
     previousMillis = currentMillis;
 }//============millis=====================
